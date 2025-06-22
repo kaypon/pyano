@@ -1,6 +1,6 @@
-# Pygame One-Octave Piano with Recording
+# Pygame One-Octave Piano
 
-A simple Python application that displays a one-octave piano keyboard using Pygame and NumPy, allows you to play notes via mouse clicks or keyboard shortcuts, and record your performance to a WAV file.
+A simple Python application that displays a one-octave piano keyboard using Pygame and NumPy, allows you to play notes via mouse clicks or keyboard shortcuts
 
 ## Features
 
@@ -8,7 +8,6 @@ A simple Python application that displays a one-octave piano keyboard using Pyga
 - **Keyboard shortcuts**: Z/S/X/D/C/V/G/B/H/N/J/M for white/black keys.
 - **Mouse & keyboard support**: Click or hold keys to play; supports polyphony and sustained notes.
 - **Key highlighting** while pressed.
-- **Record/Stop** button to capture exactly what you play, exported as a normalized WAV.
 
 ## Dependencies
 
@@ -36,6 +35,8 @@ Run the script from your activated virtual environment:
 python piano.py
 ```
 
+![alt text](image.png)
+
 ### Controls
 
 - **Mouse**: Click and hold white or black keys to play notes.
@@ -59,4 +60,3 @@ Pressed keys will be highlighted on-screen.
 
 1. **Audio Generation**: Builds 1-second sine-wave buffers for each MIDI pitch in the octave using NumPy.
 2. **Playback**: Loops sound objects on key/mouse down, stops on release for sustained polyphony.
-3. **Recording**: Logs timestamped press/release events, then reconstructs a composite waveform buffer and writes it to a WAV file.
